@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<script>
+    function CheckNumberMoBie(str) {
+        let regEx = /^[0-9]{5}(?: - [0-9]{4})?$/;
+        if (regEx.test(str)) {
+            return true
+        }
+        return false;
+    }
+
+    let zipCode = "03201 - 2150";
+    console.log(CheckNumberMoBie(zipCode));
+    let zipCode1 = "7892";
+    console.log(CheckNumberMoBie(zipCode1));
+    CheckNumberMoBie
+</script>
+</body>
+</html>
